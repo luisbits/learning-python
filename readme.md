@@ -1,3 +1,3 @@
 # Learning Python
 
-Python with [Platzi](https://platzi.com/c/lufriherrera/)
+Python with [Platzi](http://bit.ly/luisbits-platzi)
