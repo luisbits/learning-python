@@ -1,4 +1,5 @@
 # -*- coding: utf-8 -*-
+# Aprende python en http://bit.ly/luisbits-platzi
 
 import turtle
 
