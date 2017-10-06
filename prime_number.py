@@ -21,13 +21,12 @@ def main():
 
 def prime_number_calculator(number):
     flag = 0
-    numbers_list = list(range(number))
+    numbers_list = list(range(1, number))
     # Reading numbers list
     for n in numbers_list:
-        if n > 0:
-            result = number % n
-            if result > 0:
-                flag += 1
+        result = number % n
+        if result > 0:
+            flag += 1
     # Validating if it's a prime number
     if flag > 2:
         print('{} isn\'t a prime number :('.format(number))
