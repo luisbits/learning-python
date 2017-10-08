@@ -7,9 +7,9 @@
 import random
 
 
-def main():
+def main(random_number):
     number_found = False
-    random_number = random.randint(0, 20)
+    random_number = random.randint(1, random_number)
 
     while not number_found:
         number = int(raw_input("Intenta un número: \n"))
@@ -23,5 +23,6 @@ def main():
             print('El número es más grande')
 
 if __name__ == '__main__':
-    print('==== GUESS NUMBERS ====')
-    main()
+    print('==== RAMDOM NUMBER ====')
+    random_number = int(raw_input('Ingresa un número límite a adivinar \n'))
+    main(random_number)
