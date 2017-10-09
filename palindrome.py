@@ -1,12 +1,27 @@
 # -*- coding: utf-8 -*-
 
 
-palindrome_checker():
-    # to lowercase
+def palindrome_checker(word):
     word = word.lower()
+    reversed_letters = []
 
+    for letter in word:
+        reversed_letters.insert(0, letter)
+
+    reversed_word = ''.join(reversed_letters)
+
+    if reversed_word == word:
+        return True
+
+    return False
 
 if __name__ == '__main__':
-    print('=== PALINDROME CHECKER ===')
-    word = str(raw_input('Enter your word: \n'))
-    palindrome_checker(word)
+    print('=== ¿Es palíndromo? ===')
+    word = str(raw_input('Escribe una palabra: \n'))
+   
+    result = palindrome_checker(word)
+
+    if result is True:
+        print('{} es un palíndromo'.format(word))
+    else:
+        print('{} NO es un palíndromo'.format(word))
